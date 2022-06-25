@@ -1,13 +1,12 @@
 {
   "sections": {
-    "16546205351cd72933": {
+    "1656171163ddd97d03": {
       "type": "hero",
       "settings": {
       }
     },
     "image_banner": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -216,7 +215,7 @@
     }
   },
   "order": [
-    "16546205351cd72933",
+    "1656171163ddd97d03",
     "image_banner",
     "rich_text",
     "featured_collection",

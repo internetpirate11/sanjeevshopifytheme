@@ -1,4 +1,10 @@
-<div>Hello World. This is hero section</div>
+{{ 'section-hero.css' | asset_url | stylesheet_tag }}
+<div class="header-container">
+    <h1>
+        <img src="{{'hero-image.svg' | asset_url}}" />
+        <span>Vintage & thrift</span>
+    </h1>
+</div>
 
 
 {% schema %}
