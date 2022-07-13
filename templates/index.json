@@ -2,6 +2,37 @@
   "sections": {
     "1656171163ddd97d03": {
       "type": "hero",
+      "blocks": {
+        "a03d08f2-0acd-4205-b593-847c8624ff40": {
+          "type": "collection",
+          "settings": {
+            "collection": "back-to-work",
+            "image_bg": "shopify:\/\/shop_images\/hero-work.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-work-hover.png"
+          }
+        },
+        "e6d74f2e-04c6-4b03-b63f-f11dc1836835": {
+          "type": "collection",
+          "settings": {
+            "collection": "beach",
+            "image_bg": "shopify:\/\/shop_images\/hero-beach.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-beach-hover.png"
+          }
+        },
+        "7512ef91-0742-47cc-bcbc-6d5977bc450d": {
+          "type": "collection",
+          "settings": {
+            "collection": "denim",
+            "image_bg": "shopify:\/\/shop_images\/hero-denim.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-denim-hover.png"
+          }
+        }
+      },
+      "block_order": [
+        "a03d08f2-0acd-4205-b593-847c8624ff40",
+        "e6d74f2e-04c6-4b03-b63f-f11dc1836835",
+        "7512ef91-0742-47cc-bcbc-6d5977bc450d"
+      ],
       "settings": {
       }
     },
