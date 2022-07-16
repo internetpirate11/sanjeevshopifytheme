@@ -1,0 +1,50 @@
+{{ "section-collection-grid.css | asset_url | stylesheet_tag" }}
+
+<div>
+    <h2>{{ section.settings.header}}</h2>
+</div>
+<div>
+    {% for block in section.blocks %}
+    <a href="{{ block.settings.collection.url }}">
+        <div>
+            <img src="{{ block.setting.collection.image | img_url: "Large" }}" />
+            <h3>{{ block.settings.collection.title }}</h3>
+        </div>
+    </a>
+{% endfor %}
+</div>
+
+
+{% schema %}
+{
+    "name": "Collection grid",
+    "settings": [
+        {
+            "type": "text",
+            "id": "header",
+            "label": "Header"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Collection",
+            "limit": 4,
+            "name": "Collection",
+            "settings": [
+                {
+                    "type": "collection",
+                    "id": "collection",
+                    "label": "Colleciton"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+        "name": "Collection grid"
+        }
+
+    ]
+}
+
+{% endschema %}
