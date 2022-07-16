@@ -1,19 +1,20 @@
-{{ 'section-collection-grid.css | asset_url | stylesheet_tag' }}
+{{ 'section-collection-grid.css' | asset_url | stylesheet_tag }}
 
 
-<div>
-    <h2>{{ section.settings.header }}</h2>
+<div class="collection-grid-ctn">
+    <h2 class="collection-grid__title">{{ section.settings.header }}</h2>
+    <div class="collection-grid__grid-ctn">
+        {% for block in section.blocks %}
+        <a class="collection-grid__grid-item" href="{{ block.settings.collection.url }}">
+            <div class="collection-grid__img-ctn">
+                <img src="{{ block.settings.collection.image | img_url: "Large" }}" />
+                <h3 class="collection-grid__grid-title">{{ block.settings.collection.title }}</h3>
+            </div>
+        </a>
+    {% endfor %}
+    </div>
 </div>
-<div>
-    {% for block in section.blocks %}
-    <a href="{{ block.settings.collection.url }}">
-        <div>
-            <img src="{{ block.settings.collection.image | img_url: "Large" }}" />
-            <h3>{{ block.settings.collection.title }}</h3>
-        </div>
-    </a>
-{% endfor %}
-</div>
+
 
 
 {% schema %}
